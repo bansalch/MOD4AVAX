@@ -15,8 +15,10 @@ My task is to create a ERC20 token and deploy it on the Avalanche network for De
 ## Getting Started
 
 ### Fully Tested and Executed on Fuji Testnet
-![Screenshot (105)](https://github.com/Ishi181/Module4Avax/assets/139246938/d8086fda-854a-42f6-b1f5-363ebbccc6f0)
-Click here to verify: https://testnet.snowtrace.io/address/0xaf56bDecE472AB66D6df7Ff66Eae2Cf6190D0c90
+![image](https://github.com/user-attachments/assets/041e945d-8e95-437e-8201-9092e854a5c0)
+
+Click here to verify: (https://sepolia.etherscan.io/address/0x3cfA5AB18d9dD62436E1685A309929A20B42f16a)
+
 ### Executing program
 ```
 // SPDX-License-Identifier: MIT
