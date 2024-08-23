@@ -43,14 +43,15 @@ This declares a private state variable named owner of type address to store the 
 
 ```
    constructor() ERC20("Degen Gaming Token", "DGT"){
-    owner = msg.sender;
-    items[1]["Iphone"] = 120;
-    items[2]["Laptop"] = 60;
-    items[3]["Watch"] = 10;
-    itemInfo[1] = "Iphone";
-    itemInfo[2] = "Laptop";
-    itemInfo[3] = "Watch";
-}
+        owner = msg.sender;
+        items[1]["Vivo"] = 120;
+        items[2]["Sansung"] = 60;
+        items[3]["Lava"] = 10;
+
+        itemInfo[1] = "Vivo";
+        itemInfo[2] = "Samsung";
+        itemInfo[3] = "Lava";
+    }
 ```
 Initializes the token with the name "Degen Gaming Token" and symbol "DGT".
 Sets the owner to the address that deploys the contract.
@@ -67,8 +68,8 @@ This defines a modifier named onlyOwner that checks if the caller (msg.sender) i
 
 ```
 function getItems() external pure returns(string memory){
-    return "1. Iphone : 120 2. Laptop : 60 3. Watch : 10";
-}
+        return "1. Vivo : 120 2. Samsung : 60 3. Lava : 10";
+    }
 ```
 A pure function that returns a string listing the available items and their prices.
 
@@ -134,17 +135,17 @@ contract DegenGamingToken is ERC20 {
     address private owner;
     constructor() ERC20("Degen Gaming Token", "DGT"){
         owner = msg.sender;
-        items[1]["Iphone"] = 120;
-        items[2]["Laptop"] = 60;
-        items[3]["Watch"] = 10;
+        items[1]["Vivo"] = 120;
+        items[2]["Sansung"] = 60;
+        items[3]["Lava"] = 10;
 
-        itemInfo[1] = "Iphone";
-        itemInfo[2] = "Laptop";
-        itemInfo[3] = "Watch";
+        itemInfo[1] = "Vivo";
+        itemInfo[2] = "Samsung";
+        itemInfo[3] = "Lava";
     }
 
     function getItems() external pure returns(string memory){
-        return "1. Iphone : 120 2. Laptop : 60 3. Watch : 10";
+        return "1. Vivo : 120 2. Samsung : 60 3. Lava : 10";
     }
 
     modifier onlyOwner{
@@ -177,8 +178,7 @@ contract DegenGamingToken is ERC20 {
     function getBalance() external view returns(uint256) {
         return this.balanceOf(msg.sender);
     }
- }
-```
+ }```
 
 ## Authors
 
